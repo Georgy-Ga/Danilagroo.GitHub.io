@@ -29,7 +29,43 @@
             text-align: center
         .feed-form
             margin: 36px auto 0
+    .carousel
+            &__inner
+                img
+                    width: 600px
+                    margin: 0 auto
+    .comments
+        .comments__descr
+            min-width: 100px
+    .slick-dots
+        list-style: none
+        padding: 0
+        margin: 0
+        display: flex
+        justify-items: center
+        justify-content: center
+        & button
+            font-size: 0px
+            width: 10px
+            height: 10px
+            border-radius: 10px
+            border: none
+            background: #808080
+            justify-content: space-arounds
+            transition: all 1s
+            &:hover
+                background: #000000
+                transition: all 1s
+
+        li
+            padding: 20px 20px 20px 20px
+            
 @media ( max-width: 767px )
+    .catalog
+        &__tabs
+            flex-direction: column
+        li 
+            margin-top: 10px
     .consultation
         .title_left
             padding: 0px 10px 0px 10px
@@ -73,6 +109,22 @@
         &__item
             &:nth-child(2)
                 margin-top: 20px
+    .carousel
+        .carousel__inner
+            width: 100%
+            img
+                width: 450px
+    .comments
+        .comments__item
+            flex-direction: column
+        .comments__img
+            width: 170px
+            height: 170px
+            display: block
+            margin: 0 auto
+            margin-bottom: 20px
+        &__descr
+            text-align: center
 @media ( max-width: 668px )
     .header
         justify-content: center
@@ -80,12 +132,15 @@
             padding-left: 15px
         &_1
             margin: 15px 0 15px 0
-
+@media ( max-width: 600px )
+    .catalog
+        .catalog__content
+            justify-content: center
 @media ( max-width: 575px )
     .consultation
         .title_left
             font-size: 25px
-            list-height: 40px
+            ligt-height: 40px
     .promo
         &__header
             font-size: 35px
@@ -102,6 +157,10 @@
             font-size: 25px
         &__subheader
             font-size: 15px
+    .carousel
+            &__inner
+                img
+                    width: 300px
 @media ( max-width: 375px )
     .promo
         &__header

@@ -5,10 +5,12 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><img src="./image/arrow/arrow_right_red.png"></button>',
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 991,
                 settings: {
                     dots: true,
-                    arrows: false
+                    arrows: false,
+                    display:'flex',
+                    justifyContent:'space-between',
                 }
             }
         ]
@@ -46,4 +48,8 @@ $(document).ready(function(){
     };
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+
+    $('#consultation-form').validate();
+    $('#consultation form').validate();
+    $('#order form').validate();
 })
